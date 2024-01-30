@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FD0000" /> <!-- Color del pulgar -->
+    <corners android:radius="1000dp" /> <!-- Configura el radio de las esquinas, establecido en 0dp para esquinas rectangulares -->
+    <size android:width="30dp" android:height="30dp" /> <!-- Ajusta el ancho y alto según tus necesidades -->
+    <shape android:shape="oval"> <!-- Cambiado a "oval" para hacerlo redondo -->
+        <solid android:color="#00C4FF" /> <!-- Color del pulgar -->
+    </shape>
+</shape>

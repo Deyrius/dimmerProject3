@@ -1,0 +1,7 @@
+<!-- res/drawable/drawable_lock.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Candado -->
+    <item android:drawable="@drawable/ic_lock" android:tint="@color/red_lock" />
+
+</layer-list>

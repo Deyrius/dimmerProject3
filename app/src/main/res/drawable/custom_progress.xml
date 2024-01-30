@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#9000E5FF" />
+            <corners android:radius="50dp"></corners>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#3F51B5" />
+                <size android:width="4dp" /> <!-- Ajusta este valor para cambiar el ancho -->
+                <size android:height="20dp"></size>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_final_ph_azul"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="24dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/txt_dimmer2"
+        android:layout_width="87dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#FFFCFC"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="#FFFFFF"
+        android:text="Dimmer 2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_dimmer3"
+        android:layout_width="87dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#FFFCFC"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="#FFFFFF"
+        android:text="Dimmer 3"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="136dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_mod1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red_900"
+            android:text="Modulo 1"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/txt_m1_d1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 1: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m1_d2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 2: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m1_d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="true"
+            android:text="Dimmer 3: "
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_mod2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_900"
+            android:text="Modulo 2" />
+
+        <TextView
+            android:id="@+id/txt_m2_d1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 1: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m2_d2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 2: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m2_d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 3: "
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_mod3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_900"
+            android:text="Modulo 3" />
+
+        <TextView
+            android:id="@+id/txt_m3_d1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 1: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m3_d2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 2: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m3_d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 3: "
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_mod4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bluelight_900"
+            android:text="Modulo 4" />
+
+        <TextView
+            android:id="@+id/txt_m4_d1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 1: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m4_d2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 2: "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_m4_d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dimmer 3: "
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="72dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_sw3_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_sw3_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_sw3_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_sw3_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="4" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/dimmer3"
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="100dp"
+        android:layout_marginStart="772dp"
+        android:max="255"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress"
+        android:progressTint="#3F51B5"
+        android:rotation="-90"
+        android:thumb="@drawable/custom_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="74dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_sw1_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="?attr/actionModeSplitBackground"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_sw1_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_sw1_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_sw1_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="4" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/dimmer1"
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="100dp"
+        android:max="255"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress"
+        android:progressTint="#3F51B5"
+        android:rotation="-90"
+        android:thumb="@drawable/custom_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="70dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.667"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_sw2_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_sw2_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_sw2_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_sw2_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="4" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/dimmer2"
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="100dp"
+        android:max="255"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress"
+        android:progressTint="#3F51B5"
+        android:rotation="-90"
+        android:thumb="@drawable/custom_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_g_1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="1"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_g_2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn_g_3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn_g_4"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_g_5"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_g_6"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btn_g_7"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn_g_8"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn_g_9"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:text="9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp">
+
+            <Button
+                android:id="@+id/btn_g_10"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="10"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_g_11"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="11" />
+
+            <Button
+                android:id="@+id/btn_g_12"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="12" />
+
+            <Button
+                android:id="@+id/btn_g_13"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="13" />
+
+            <Button
+                android:id="@+id/btn_g_14"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="14" />
+
+            <Button
+                android:id="@+id/btn_g_15"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/btn_g_16"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="16" />
+
+            <Button
+                android:id="@+id/btn_g_17"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="17" />
+
+            <Button
+                android:id="@+id/btn_g_18"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:text="18" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/btn_lock"
+        android:layout_width="94dp"
+        android:layout_height="96dp"
+        android:background="#00000000"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/selector_lock_unlock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <TextView
+        android:id="@+id/txt_dimmer1"
+        android:layout_width="87dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#FFFCFC"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="#FFFFFF"
+        android:text="Dimmer 1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
