@@ -20,5 +20,7 @@
     <color name="red_lock">#FF0000</color>
     <color name="verde_galva">#428838</color>
     <color name="orange">#FF9100</color>
+    <color name="bluelight_stop">#9002FFEA</color>
+    <color name="red_stop_solid">#F40000</color>
 
 </resources>

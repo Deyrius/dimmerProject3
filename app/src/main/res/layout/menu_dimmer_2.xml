@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/log_final_ph_azul"
+    android:background="@drawable/logo_sin_expander"
     android:orientation="vertical"
     tools:layout_editor_absoluteX="24dp"
     tools:layout_editor_absoluteY="0dp">

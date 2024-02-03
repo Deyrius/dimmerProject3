@@ -33,12 +33,6 @@ import com.example.dimmerproject.ViewModel.LogicaViewModel
 class MainActivity : AppCompatActivity() {
 
 
-
-
-
-
-
-
     lateinit var btn_mod_1: Button
     lateinit var btn_mod_2: Button
     lateinit var btn_mod_3: Button
@@ -174,9 +168,6 @@ class MainActivity : AppCompatActivity() {
         usbManager = getSystemService(Context.USB_SERVICE) as UsbManager
         registerUSBReceiver()
         viewModel = ViewModelProvider(this, LogicaViewModel.LogicaViewModelFactory(application)).get(LogicaViewModel::class.java)
-
-
-
 
 
         //******* SWITCH 1 *******
@@ -558,6 +549,12 @@ class MainActivity : AppCompatActivity() {
                 txt_dimmer1.setTextColor(ContextCompat.getColor(this, R.color.red_lock))
                 txt_dimmer2.setTextColor(ContextCompat.getColor(this, R.color.red_lock))
                 txt_dimmer3.setTextColor(ContextCompat.getColor(this, R.color.red_lock))
+               /*
+                dimmer1.apply {
+                    progressDrawable.apply { tintDrawable(this, R.color.red_stop_solid) }
+                }
+               */
+
             } else {
                 limpiador()
                 btn_lock.setImageResource(R.drawable.ic_unlock)
@@ -1029,17 +1026,17 @@ class MainActivity : AppCompatActivity() {
         dimmer1 = findViewById(R.id.dimmer1)
         dimmer1.apply {
             tintDrawable(thumb, R.color.red_900)
-            tintDrawable(progressDrawable, R.color.orange)
+            tintDrawable(progressDrawable, R.color.bluelight_stop)
         }
         dimmer2 = findViewById(R.id.dimmer2)
         dimmer2.apply {
             tintDrawable(thumb, R.color.red_900)
-            tintDrawable(progressDrawable, R.color.orange)
+            tintDrawable(progressDrawable, R.color.bluelight_stop)
         }
         dimmer3 = findViewById(R.id.dimmer3)
         dimmer3.apply {
             tintDrawable(thumb, R.color.red_900)
-            tintDrawable(progressDrawable, R.color.orange)
+            tintDrawable(progressDrawable, R.color.bluelight_stop)
         }
     }
 
