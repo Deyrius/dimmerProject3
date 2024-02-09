@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val ACTION_USB_PERMISSION = "com.example.dimmerproject.USB_PERMISSION"
-        private const val TIMEOUT = 1000 // Puedes ajustar este valor según tus necesidades
+        private const val TIMEOUT = 5000 // Puedes ajustar este valor según tus necesidades
 
     }
 
@@ -175,28 +175,29 @@ class MainActivity : AppCompatActivity() {
         var btn_sw1_2_encendido = false
         var btn_sw1_3_encendido = false
         var btn_sw1_4_encendido = false
-        var sw1Message_1 = ""
-        var sw1Message_2 = ""
-        var sw1Message_3 = ""
-        var sw1Message_4 = ""
+        var sw1Message_1 = "10"
+        var sw1Message_2 = "20"
+        var sw1Message_3 = "30"
+        var sw1Message_4 = "40"
+
         //******* SWITCH 2 *******
         var btn_sw2_1_encendido = false
         var btn_sw2_2_encendido = false
         var btn_sw2_3_encendido = false
         var btn_sw2_4_encendido = false
-        var sw2Message_1 = ""
-        var sw2Message_2 = ""
-        var sw2Message_3 = ""
-        var sw2Message_4 = ""
+        var sw2Message_1 = "10"
+        var sw2Message_2 = "20"
+        var sw2Message_3 = "30"
+        var sw2Message_4 = "40"
         //******* SWITCH 3 *******
         var btn_sw3_1_encendido = false
         var btn_sw3_2_encendido = false
         var btn_sw3_3_encendido = false
         var btn_sw3_4_encendido = false
-        var sw3Message_1 = ""
-        var sw3Message_2 = ""
-        var sw3Message_3 = ""
-        var sw3Message_4 = ""
+        var sw3Message_1 = "10"
+        var sw3Message_2 = "20"
+        var sw3Message_3 = "30"
+        var sw3Message_4 = "40"
 
         //******* DIMMERS *******
         var messageDimmer1 = ""
@@ -292,20 +293,20 @@ class MainActivity : AppCompatActivity() {
             Log.d("DEBUG",valores.toString())
         }
         btn_sw1_2.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw1_2,"12",btn_sw1_2_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw1_2,"21",btn_sw1_2_encendido,this)
             btn_sw1_2_encendido = valores.first
             sw1Message_2 = valores.second
             Log.d("DEBUG",valores.toString())
 
         }
         btn_sw1_3.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw1_3,"13",btn_sw1_3_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw1_3,"31",btn_sw1_3_encendido,this)
             btn_sw1_3_encendido = valores.first
             sw1Message_3 = valores.second
             Log.d("DEBUG",valores.toString())
         }
         btn_sw1_4.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw1_4,"14",btn_sw1_4_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw1_4,"41",btn_sw1_4_encendido,this)
             btn_sw1_4_encendido = valores.first
             sw1Message_4 = valores.second
             Log.d("DEBUG",valores.toString())
@@ -313,25 +314,25 @@ class MainActivity : AppCompatActivity() {
 
         //******* SWITCH 2 *******
         btn_sw2_1.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw2_1,"21",btn_sw2_1_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw2_1,"11",btn_sw2_1_encendido,this)
             btn_sw2_1_encendido = valores.first
             sw2Message_1 = valores.second.trim()
             Log.d("DEBUG",valores.toString())
         }
         btn_sw2_2.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw2_2,"22",btn_sw2_2_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw2_2,"21",btn_sw2_2_encendido,this)
             btn_sw2_2_encendido = valores.first
             sw2Message_2 = valores.second.trim()
             Log.d("DEBUG",valores.toString())
         }
         btn_sw2_3.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw2_3,"23",btn_sw2_3_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw2_3,"31",btn_sw2_3_encendido,this)
             btn_sw2_3_encendido = valores.first
             sw2Message_3 = valores.second.trim()
             Log.d("DEBUG",valores.toString())
         }
         btn_sw2_4.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw2_4,"24",btn_sw2_4_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw2_4,"41",btn_sw2_4_encendido,this)
             btn_sw2_4_encendido = valores.first
             sw2Message_4 = valores.second.trim()
             Log.d("DEBUG",valores.toString())
@@ -339,26 +340,29 @@ class MainActivity : AppCompatActivity() {
 
         //******* SWITCH 3 *******
         btn_sw3_1.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw3_1,"31",btn_sw3_1_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw3_1,"11",btn_sw3_1_encendido,this)
             btn_sw3_1_encendido = valores.first
             sw3Message_1 = valores.second
+            Log.d("DEBUG",valores.toString())
         }
         btn_sw3_2.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw3_2,"32",btn_sw3_2_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw3_2,"21",btn_sw3_2_encendido,this)
             btn_sw3_2_encendido = valores.first
             sw3Message_2 = valores.second
-
+            Log.d("DEBUG",valores.toString())
         }
         btn_sw3_3.setOnClickListener {
-            val valores = viewModel.colorearFuente(btn_sw3_3,"33",btn_sw3_3_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw3_3,"31",btn_sw3_3_encendido,this)
             btn_sw3_3_encendido = valores.first
             sw3Message_3 = valores.second
+            Log.d("DEBUG",valores.toString())
         }
         btn_sw3_4.setOnClickListener {
 
-            val valores = viewModel.colorearFuente(btn_sw3_4,"34",btn_sw3_4_encendido,this)
+            val valores = viewModel.colorearFuente(btn_sw3_4,"41",btn_sw3_4_encendido,this)
             btn_sw3_4_encendido = valores.first
             sw3Message_4 = valores.second
+            Log.d("DEBUG",valores.toString())
 
         }
 

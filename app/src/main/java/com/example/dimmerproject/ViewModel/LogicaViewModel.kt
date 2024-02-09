@@ -27,15 +27,13 @@ import com.example.dimmerproject.R
         }
 
         fun colorearFuente (boton: Button,switch:String,  encendido: Boolean, contexto: Context ) : Pair<Boolean,String>{
-            val valor: String
             return if (encendido){
                 boton.setTextColor(ContextCompat.getColor(contexto, R.color.white))
-                valor = ""
-                Pair(false,valor.trim())
+
+                Pair(false,switch[0]+"0".trim())
             }else{
                 boton.setTextColor(ContextCompat.getColor(contexto, R.color.orange))
-                valor = switch
-                Pair(true,valor.trim())
+                Pair(true,switch.trim())
             }
 
         }
